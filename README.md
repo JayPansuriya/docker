@@ -1,7 +1,7 @@
 # Docker
-**Docker Notes**
+**:memo:Docker Notes**
 
-**Docker Terminologies**
+**:page_facing_up:Docker Terminologies**
 
 1) **Docker File** - It contains Docker Domain Specific keywords to build image
 2) **Docker Image** - It is a package which contains everything (App code + softwares + env + libraries)
@@ -10,7 +10,7 @@
 5) **Docker Engine** - It is a software using which we will create Docker images and Docker Container (docker daemon)
 
 
-**Docker Commands**
+**:rocket:Docker Commands**
 
 1) **docker info** -> System wide information regarding the Docker installation
 2) **docker images** -> List all the Docker images available on system
