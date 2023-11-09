@@ -24,4 +24,11 @@
 10) **docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]** -> Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
 11) **docker push NAME[:TAG]** -> Upload an image to a registry
 
+**:fast_forward:Steps To Create a Dockerfile**
+- Create a file named Dockerfile.
+- Add instructions in Dockerfile.
+- Build Dockerfile to create an image.
+- Run the image to create a container.
+
+![image](https://github.com/JayPansuriya/docker/assets/68367978/c12f8f80-8fad-4dc7-adbe-d6dc0b3461da)
 
