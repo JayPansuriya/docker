@@ -12,7 +12,7 @@
 
 **:rocket:Docker Commands**
 
-1) **docker info** -> System wide information regarding the Docker installation
+1) **docker info** -> System wide information regarding the Docker installation (sudo service docker start)
 2) **docker images** -> List all the Docker images available on system
 3) **docker ps** -> List all the running Docker containers
 4) **docker pull <image-name>** -> Download a Docker image from a registry
