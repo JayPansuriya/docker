@@ -23,7 +23,7 @@
 9) **docker rm CONTAINER** -> Remove one or more Docker containers
 10) **docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]** -> Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
 11) **docker push NAME[:TAG]** -> Upload an image to a registry
-12) **docker system prun -a** -> Remove stopped contaiers and unused images  
+12) **docker system prune -a** -> Remove stopped contaiers and unused images  
 
 **:fast_forward:Steps To Create a Dockerfile**
 - Create a file named Dockerfile.
