@@ -39,19 +39,19 @@
 - Docker engine will process Dockerfile instructions from top to bottom
 
 **Dockerfile keywords**
-**FROM:** It indicates base image to run our application. On top of base image we will create our own image.
-**MAINTAINER:** Deprecated. Used to set the author or maintainer information.
-**COPY:** It is used to copy files/folders to image while creating an image.
-**ADD:** Similar to COPY but can also fetch files from remote URLs and extract compressed files.
-**RUN:** Executes a command in a new layer on top of the current image and commits the results while creating an image.
-**CMD:** Provides a default command that will be executed when the container starts.
-**ENTRYPOINT:** Configures the container to run as an executable, setting the default application. It executes while creating container.
-**ENV:** Sets environment variables in the image.
-**LABEL:** Adds metadata to an image in the form of key-value pairs.
-**ARG:** Used to avoid hardcoded values in docker file.
-**USER:** Sets the user or UID to use when running the container.
-**WORKDIR:** Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions.
-**EXPOSE:** Informs Docker that the container listens on specified network ports at runtime.
-**VOLUME:** Creates a mount point with the specified name and marks it as holding externally mounted volumes.
+- **FROM:** It indicates base image to run our application. On top of base image we will create our own image.
+- **MAINTAINER:** Deprecated. Used to set the author or maintainer information.
+- **USER:** Sets the user or UID to use when running the container.
+- **COPY:** It is used to copy files/folders to image while creating an image.
+- **ADD:** Similar to COPY but can also fetch files from remote URLs and extract compressed files.
+- **RUN:** Executes a command in a new layer on top of the current image and commits the results while creating an image.
+- **CMD:** Provides a default command that will be executed when the container starts.
+- **ENTRYPOINT:** Configures the container to run as an executable, setting the default application. It executes while creating container.
+- **ENV:** Sets environment variables in the image.
+- **LABEL:** Adds metadata to an image in the form of key-value pairs.
+- **ARG:** Used to avoid hardcoded values in docker file.
+- **WORKDIR:** Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions.
+- **EXPOSE:** Informs Docker that the container listens on specified network ports at runtime.
+- **VOLUME:** Creates a mount point with the specified name and marks it as holding externally mounted volumes.
 
 
