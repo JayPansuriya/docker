@@ -61,4 +61,13 @@
 - Using Docker volume we can share the data among multiple Docker containers
 - On deletion of Continer Docker Volume will not be deleted
 
+**Docker Volume Commands**
 
+- **docker volume --help** -> To display docker volume commands
+- **docker volume <volume-name>** -> Create Docker Volume 
+- **docker volume ls** -> Display Docker volumes 
+- **docker volume inspect <volume-name>** ->  Inspect the volume 
+- **docker volume rm <volumne-name>** -> Remove docker volume 
+- **docker volume prune** -> Remove unsued volumes 
+
+**Ex:** docker run -d --name=webapp20 --mount source=new_vol,destination=/usr/share/nginx/html -p 80:80 nginx
