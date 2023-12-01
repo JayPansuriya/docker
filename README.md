@@ -89,4 +89,52 @@ volumes:
 - **docker-compose down** -> Stop and remove containers
 - **docker-compose images** -> list down running container images
 - **docker-compose -f <filename> up** ->  Using different file
+
+
+**Docker Network**
+- Networking is all about communication among processes
+- Docker Networking enables a user to link a docker container to as many networks as they require
+- Docker network is used to provide complete isolation for Docker containers
   
+**Advantages of Docker Networking**
+1) They share single operating system and maintains containers in isolated manner
+2) It requries fewer OS instance to run the workload
+3) It helps in fast delivery of the software
+4) It helps in application portability
+
+- When Docker s/w is installed in a machine, by default, three docker networks will be configured
+1) none 2) host 3) bridge
+Note: One container we can attach to multiple networks
+-> When container is attached to multiple networks then those containers can communicate
+-> Docker providing Networking to containers using Network Drivers
+
+**Docker Network Drivers**
+1) Bridge
+2) Host
+3) None
+4) Overlay
+5) Macvlan
+
+**Bridge Driver** 
+- This is the default network drive created on the Docker host machine
+Note: Bridge network drivers are very useful when an application running in a standalone container
+
+**Host Driver**
+ It is useful when a standalone container is available
+- The container will not get any IP address when we enable Host Driver
+Note: For example a container is executed that binds to port 80 with Host Network Driver. In this case we no need to map container port to host machine port.
+-> This is useful when we are running our containers with large no. of ports
+  
+**None Driver**
+- In this type of network, the containers will have no access to the network
+  
+**Overlay Driver**
+- Use in Docker Swarm to orchestrate our Docker containers
+- Overlay Driver will be used when we have a Docker Swarm cluster
+  
+**Macvlan Driver**
+- This network driver will assign a MAC address to a container
+- MAC address will make our device as Physical
+- Using this MAC address Docker engine routes the traffic to a particular route
+- Macvlan driver simplifies communication between container
+
