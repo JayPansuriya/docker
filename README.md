@@ -71,3 +71,22 @@
 - **docker volume prune** -> Remove unsued volumes 
 
 **Ex:** docker run -d --name=webapp20 --mount source=new_vol,destination=/usr/share/nginx/html -p 80:80 nginx
+
+**Docker Compose**
+
+- Docker compose is a tool that is used to manage multi-container-based applications
+- We will give input to Docker compose tool using the YAML file to run multiple containers
+
+**:page_facing_up:Sample Docker Compose YML (docker-compose.yml)**
+version:
+services
+network:
+volumes:
+
+**Docker Compose Commands**
+- **docker-compose up** -> Create and start the containers
+- **docker-compose ps** -> List Docker containers started by docker compose
+- **docker-compose down** -> Stop and remove containers
+- **docker-compose images** -> list down running container images
+- **docker-compose -f <filename> up** ->  Using different file
+  
