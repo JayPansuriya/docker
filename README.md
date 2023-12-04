@@ -138,3 +138,19 @@ Note: For example a container is executed that binds to port 80 with Host Networ
 - Using this MAC address Docker engine routes the traffic to a particular route
 - Macvlan driver simplifies communication between container
 
+
+**:rocket:Docker Swarm**
+
+- It is a container orchestration sofware
+- Orchestration means managing processes/containers
+- Docker Swarm is used to setup Docker Cluster
+- Docker swarm is embedded in Docker engine
+- Cluster means group of servers
+- We will setup Master and Worker nodes using Docker Swarm cluster
+- Master will schedule the tasks (containers) and manage the nodes and node failures
+- Worker nodes will perform the action (containers will run here)
+
+**Swarm Features**
+1) Cluster Management 2) Decentralize design 3) Declarative service model
+4) Scaling 5) Multi Host Network 6) Service Discovery
+7) Load Balancing 8) Secure by default 9) Rolling Updates
